@@ -1,38 +1,219 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #cbf3f0;
+  /* overflow: hidden; */
+  scroll-behavior: smooth;
+  color: #ff9f1c;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.motivate__app-home,
+.motivate__app-select,
+.motivate__app-modal,
+.motivate__app-done {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.motivate__app-home-cta {
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.motivate__app-home p {
+  font-size: 3rem;
+  margin: 0.5rem 0rem 1rem 0rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.motivate__app-home_logo {
+  width: 100%;
+  height: 100%;
+  font-size: 8rem;
+  margin-top: -2rem;
+  color: #2ec4b6;
+}
+
+.motivate__app-select label {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  line-height: 2;
+}
+
+.motivate__app-select select {
+  font-size: 2rem;
+  font-weight: 100;
+  width: 50%;
+  border: none;
+  background-color: white;
+  border-radius: 12px;
+  display: inline-block;
+  padding: 0.5em 3.5em 0.5em 1em;
+  margin-bottom: 3rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #2ec4b6 50%),
+    linear-gradient(135deg, #2ec4b6 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+.motivate__app-select select:focus {
+  background-image: linear-gradient(45deg, #ff9f1c 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, #ff9f1c 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  border: thin solid #ff9f1c;
+  outline: 0;
+}
+
+.motivate__app-select_button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+
+.motivate__app-select_button button {
+  width: fit-content;
+  padding: 0.5rem 3rem;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  min-width: 20%;
+  background-color: #ff9f1c;
+  color: #fff;
+}
+
+.motivate__app-modal_card {
+  width: 50%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.motivate__app-modal_card-svg {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ff9f1c;
+  margin-bottom: -2rem;
+}
+
+.motivate__app-modal_card-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.motivate__app-modal_card-body_title {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 2;
+  width: 90%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: thin solid #ff9f1c;
+  border-radius: 50px;
+  padding: 1.5rem;
+  flex-wrap: wrap;
+}
+.motivate__app-modal_card-body_tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  width: 100%;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.motivate__app-modal_card-body_tags p {
+  color: #ff9f1c;
+}
+.motivate__app-modal_card-body_buttons {
+  align-self: flex-start;
+  width: 50%;
+}
+.motivate__app-modal_card-body_buttons button {
+  margin: 0 1rem;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  background-color: #ff9f1c;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.motivate__app-modal_backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #cbf3f0;
+  /* z-index: 1; */
+  backdrop-filter: blur(12px);
+}
+
+.motivate__app-done h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+.motivate__app-done p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  letter-spacing: 0.2rem;
+  color: #000;
+}
+
+.motivate__app-done button {
+  width: fit-content;
+  padding: 0.5rem 3rem;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  min-width: 20%;
+  background-color: #2ec4b6;
+  color: #fff;
 }
