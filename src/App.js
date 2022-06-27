@@ -80,7 +80,7 @@ function App() {
             >
               Feeling Bored?
             </motion.p>
-            <motion.p
+            {/* <motion.p
               initial={{ opacity: 0 }}
               animate={{
                 opacity: 1,
@@ -93,10 +93,10 @@ function App() {
               }}
             >
               Activ
-            </motion.p>
+            </motion.p> */}
           </motion.div>
           <a href="#select">
-            <motion.div
+            <motion.button
               className="motivate__app-home_logo"
               initial={{ opacity: 0, scale: 1 }}
               // initial={{ color: "red" }}
@@ -112,9 +112,9 @@ function App() {
                 yoyo: Infinity,
               }}
               whileHover="hover"
-            >
+            > Click Me
               <VscActivateBreakpoints />
-            </motion.div>
+            </motion.button>
           </a>
         </div>
         <div id="select" className="motivate__app-select">
