@@ -14,7 +14,7 @@ At the time of building this app, I faced a few challenges with structuring the 
 
 ### Future Improvements
 
-In the future, I would prefer; for the purpose of efficiency and scalability, to separate all functionalities and logic into different, smaller re-useable components as well as manage all component states using a global state manager like **REDUX** or **REDUX Toolkit**. I would also be nice to implement a feature that saves activities that users like the most or actually did.
+In the future, I would prefer; for the purpose of efficiency and scalability, to separate all functionalities and logic into different, smaller re-useable components as well as manage all component states using a global state manager like **REDUX** or **REDUX Toolkit**. It would also be nice to implement a feature that saves activities that users like the most or actually did.
 
 ## How to use the app
 
