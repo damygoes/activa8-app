@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# ACTIVATE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### _An activity finder app_
 
-## Available Scripts
+ACTIVATE is an app that helps you find, or rather suggests an activity to do when you run out of ideas or are bored. It is able to do this by connecting to the BoredAPI to fetch and suggest activities to users.
 
-In the project directory, you can run:
+## Tools
 
-### `yarn start`
+The app is built using React JS, REST API, FramerMotion and CSS. I used React because of the benefits of single page applications and FramerMotion for simple, fast and responsive animations.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Challenges
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+At the time of building this app, I faced a few challenges with structuring the project in a way that would allow efficiency, functionality and scalability. I used a file structure that cramped all logic and functionality into a single file - _app.js_
 
-### `yarn test`
+### Future Improvements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In the future, I would prefer; for the purpose of efficiency and scalability, to separate all functionalities and logic into different, smaller re-useable components as well as manage all component states using a global state manager like **REDUX** or **REDUX Toolkit**. I would also be nice to implement a feature that saves activities that users like the most or actually did.
 
-### `yarn build`
+## How to use the app
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ACTIVATE is very intuitive and easy to use.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Load the app
+- Click on the get started button
+- Choose a category of activity that you're interested in
+- Click of the **GO** button
+- Then, you get an activity suggestion.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can either proceed with the suggested activity, shuffle the suggestions or choose a different category entirely.
 
-### `yarn eject`
+## Development
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### File Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+── README.md
+├── package.json
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── src
+│   ├── App.css
+│   ├── App.js
+│   ├── assets
+│   │   └── motivation.svg
+│   ├── components
+│   │   ├── Navbar.jsx
+│   │   └── navbar.css
+│   ├── index.css
+│   └── index.js
+└── yarn.lock
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> As mentioned above, this file structure is not optimal and would be improved upon in the future.
