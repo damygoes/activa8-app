@@ -7,7 +7,7 @@ import { VscActivateBreakpoints } from "react-icons/vsc";
 import "./App.css";
 
 function App() {
-	const BASE_URL = "http://www.boredapi.com/api/activity?type=";
+	const BASE_URL = "https://www.boredapi.com/api/activity?type=";
 
 	const [activity, setActivity] = useState([]);
 	const [userSelectValue, setUserSelectValue] = useState("");
@@ -101,7 +101,7 @@ function App() {
 								scale: 1.5,
 							}}
 							transition={{
-								delay: 2,
+								delay: 1,
 								duration: 2,
 								type: "spring",
 								stiffness: 100,
